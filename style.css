@@ -26,6 +26,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+
+  position: relative;
 }
 
 .card-container {
@@ -67,6 +69,14 @@ img {
   font-size: 0.9375em;
   color: var(--slate-500);
 }
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
 
 .attribution {
   font-size: .8em;
