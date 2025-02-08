@@ -2,10 +2,9 @@
 
 :root {
   --bg-color: hsl(212, 45%, 89%);
-  --primary-color: hsl(216, 15%, 48%);
-  --secondary-color: hsl(218, 44%, 22%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
 
-  --f-size: 15px;
   --f-family: 'Outfit';
   --f-weight-400: 400;
   --f-weight-700: 700;
@@ -19,36 +18,65 @@
 
 body {
   background-color: var(--bg-color);
-  font-family: var(--f-family);
-  font-size: var(--f-size);
 
   height: 100vh;
 
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .card-container {
   background-color: white;
+  border-radius: 0.625rem;
 
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
 
-  width: 12rem;
-  padding: 0.625rem;
-  margin-bottom: 2rem;
-  border-radius: 0.625rem;
+  width: 20rem;
+  min-height: 31.1875rem;
+  gap: 0.5rem;
 }
 
 img {
-  width: 10rem;
+  margin-top: 1rem;
+  
+  width: 18rem;
   border-radius: 0.625rem;
 }
 
 .card-description {
+  font-family: var(--f-family);
+
   text-align: center;
+  padding: .8rem 1.8rem 0;
+}
+
+.card-container p:nth-child(1) {
+  font-weight: var(--f-weight-700);
+  font-size: 1.375em;
+  color: var(--slate-900);
+
+  margin-bottom: 1rem;
+}
+
+.card-container p:nth-child(2) {
+  font-size: 0.9375em;
+  color: var(--slate-500);
+}
+
+.attribution {
+  font-size: .8em;
+  color: var(--slate-500);
+}
+
+.attribution a {
+  color: var(--slate-500);
+}
+
+.attribution a:hover {
+  color: black;
 }
