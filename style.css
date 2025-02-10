@@ -60,7 +60,7 @@ img {
   padding: .8rem 1.8rem 0;
 }
 
-.card-container p:nth-child(1) {
+.card-header {
   font-weight: var(--f-weight-700);
   font-size: 1.375em;
   color: var(--slate-900);
@@ -68,7 +68,7 @@ img {
   margin-bottom: 1rem;
 }
 
-.card-container p:nth-child(2) {
+.card-paragraph {
   font-size: 0.9375em;
   color: var(--slate-500);
 }
